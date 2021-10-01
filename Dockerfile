@@ -13,7 +13,4 @@ COPY . /usr/src/app/
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-FROM node:6
-EXPOSE 4000
-COPY index.js .
-CMD node index.js
+CMD python3 manage.py runserver --settings=djangoTradeMark.settings.production
