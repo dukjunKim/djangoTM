@@ -13,8 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+
+from djangoTradeMark import settings
 
 urlpatterns = [
     path('', include('blog.urls'), name='blog'),  # 원래 내용은 path('',include('blog.urls')), 였음
@@ -22,3 +25,4 @@ urlpatterns = [
 #    path('users/', include('blog.urls'), name='blog')
     #path() -> 얘는 view로
 ]
+
