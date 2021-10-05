@@ -12,3 +12,4 @@ urlpatterns = [
    # path('tb_kt14_list/<pk>', views.address),
     #path('api/blog/', tbkt14ListAPI.as_view()),
 ]
+
